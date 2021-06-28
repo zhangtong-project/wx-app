@@ -1,0 +1,161 @@
+.swiimg{
+  width: 100%;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #cccccc;
+}
+.menu-item{
+  width: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu-img{
+  width: 66%;
+  align-self: center;
+}
+.xiaoxi_mc{
+  font-size: 12px;
+  align-self: center;
+}
+.xiaoxi{
+  display: flex;
+  align-items: center;
+  padding:5px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.xiaoxi_icon{
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.xiaoxi_te{
+  font-size:12px;
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis ;
+}
+.xiaoxi_arr{
+  width: 14px;
+  height: 14px;
+}
+.qukuai{
+  display: flex;
+  background-color: aliceblue;
+  align-items: center;
+  font-size: 14px;
+}
+.y01{
+  width: 3px;
+  height: 14px;
+  background-color: green;
+  margin: 5px;
+}
+.t01{
+  color: gray;
+  flex: 1;
+  text-shadow: 1px 1px 1px gray;
+}
+.m01{
+  color: gray;
+  margin-right: 5px;
+  text-shadow: 1px 1px 1px gray;
+}
+/* 最新 */
+.zuixin{
+  display: flex;
+  flex-wrap: wrap;
+}
+.zuixin-item{
+  width: 50%;
+  display: flex;
+  flex-direction:column ;
+  padding: 5px;
+  box-sizing: border-box;
+  border-bottom: 1px dotted gold;
+}
+.zuixin-img{
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #fcfafa;
+  box-shadow: 0px 2px 2px gainsboro;
+  padding:5px;
+  box-sizing: border-box;
+}
+.zuixin-mc{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  padding: 3px;
+}
+.zuixin-jiage0{
+  font-size: 10px;
+  padding: 3px;
+  color: red;
+}
+.zuixin-jiage1{
+  font-size: 14px;
+  padding: 3px;
+  color: red;
+}
+.zuixin-jiage2{
+  font-size: 12px;
+  padding: 3px;
+  color: gray;
+}
+/* 销售排行 */
+.paihang-item{
+  display: flex;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.paihang-tupian{
+  width: 20%;
+}
+.paihang-img{
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px gainsboro;
+}
+.paihang-xinxi{
+  width: 80%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.paihang-mingcheng{
+   font-size: 13px;
+   font-weight: bold;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow:ellipsis ;
+}
+.paihang-jianjie{
+    font-size: 11px;
+    color: gray;
+    margin: 5px 0;
+}
+.paihang-xuhao{
+  color: green;
+  font-size: 13px;
+}
+.paihang-xiaoshou{
+  font-size: 11px;
+  color: gray;
+}
+.paihang-jiage0{
+  font-size: 11px;
+  color: red;
+}
+.paihang-jiage1{
+  font-size: 10px;
+  color: red;
+}

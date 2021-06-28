@@ -1,0 +1,67 @@
+.fenlei{
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+}
+.zuo{
+  width: 20%;
+  border-right: 1px solid #ddd;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left_text{
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  line-height: 36px;
+}
+.selected{
+  color: red;
+  background-color:#fff;
+}
+.zuixin{
+  width: 80%;
+}
+.zuixin-item{
+  width: 50%;
+  display: flex;
+  flex-direction:column ;
+  padding: 5px;
+  box-sizing: border-box;
+  border-bottom: 1px dotted gold;
+  float: left;
+}
+.zuixin-img{
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #fcfafa;
+  box-shadow: 0px 2px 2px gainsboro;
+  padding:5px;
+  box-sizing: border-box;
+}
+.zuixin-mc{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  padding: 3px;
+}
+.zuixin-jiage0{
+  font-size: 10px;
+  padding: 3px;
+  color: red;
+}
+.zuixin-jiage1{
+  font-size: 14px;
+  padding: 3px;
+  color: red;
+}
+.zuixin-jiage2{
+  font-size: 12px;
+  padding: 3px;
+  color: gray;
+}

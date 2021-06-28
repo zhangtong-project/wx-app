@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/fenlei/index",
+    "pages/gouwuche/index",
+    "pages/huiyuan/index",
+    "pages/huiyuan/zhanghao/reg",
+    "pages/huiyuan/shoucang/sc",
+    "pages/huiyuan/index2",
+    "pages/guanyu/index",
+    "pages/chanpin/xiangxi"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#999999",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/a-off.png",
+        "selectedIconPath": "images/a-on.png"
+      },
+      {
+        "pagePath": "pages/fenlei/index",
+        "text": "分类",
+        "iconPath": "images/b-off.png",
+        "selectedIconPath": "images/b-on.png"
+      },
+      {
+        "pagePath": "pages/gouwuche/index",
+        "text": "购物车",
+        "iconPath": "images/c-off.png",
+        "selectedIconPath": "images/c-on.png"
+      },
+      {
+        "pagePath": "pages/huiyuan/index",
+        "text": "会员",
+        "iconPath": "images/d-off.png",
+        "selectedIconPath": "images/d-on.png"
+      },
+      {
+        "pagePath": "pages/guanyu/index",
+        "text": "关于我们",
+        "iconPath": "images/e-off.png",
+        "selectedIconPath": "images/e-on.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

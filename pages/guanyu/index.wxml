@@ -1,0 +1,20 @@
+<navigator class="caidan">
+  <image src="../../images/menu5.png" alt="" class="left-img"/>
+  <text class="nav-text">帮助中心</text>
+  <image src="../../images/youjiantou.png" class="right-img"></image>
+</navigator>
+<navigator class="caidan">
+  <image src="../../images/menu6.png" alt="" class="left-img"/>
+  <text class="nav-text">活动列表</text>
+  <image src="../../images/youjiantou.png" class="right-img"></image>
+</navigator>
+<navigator class="caidan">
+  <image src="../../images/menu7.png" alt="" class="left-img"/>
+  <text class="nav-text">留言反馈</text>
+  <image src="../../images/youjiantou.png" class="right-img"></image>
+</navigator>
+<navigator class="caidan" bindtap="tuichu" url=".">
+  <image src="../../images/menu8.png" alt="" class="left-img"/>
+  <text class="nav-text">关务我们</text>
+  <image src="../../images/youjiantou.png" class="right-img"></image>
+</navigator>

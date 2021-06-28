@@ -1,0 +1,40 @@
+.toubu{
+  display: flex;
+  margin: 1px;
+  padding:10px ;
+  background-color:red;
+}
+.left-touxiang{
+  width: 80px;
+  height: 80px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+}
+.right{
+  margin-left: 10px;
+}
+.right-text1{
+  line-height: 28px;
+  color: #fff;
+  font-size: 14px;
+}
+.caidan{
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+  padding: 10px 5px ;
+}
+.left-img{
+  width: 20px;
+  height: 20px;
+}
+.nav-text{
+  flex: 1;
+  margin-left: 5px;
+}
+.right-img{
+  width: 16px;
+  height: 16px;
+}

@@ -1,0 +1,22 @@
+<form>
+  <view class="denglu">
+    <text class="shuoming">请输入您的会员账号</text>
+    <view class="form-wrap">
+        <view class="flex-wap input-wrap">
+            <text class="label">账号</text>
+            <input value="" id="username" name="username" class="account-info-input" />
+        </view>
+        <view class="flex-wap input-wrap">
+            <text class="label">密码</text>
+            <input value="" id="password" name="password" type="password" class="account-info-input" />
+        </view>
+    </view> 
+    <text class="shuoming">请准确填写账号信息，有问题联系客服</text>
+    <button class="mysubmit" type="primary">登录</button>
+    <button class="mysubmit" type="primary" bindtap="toReg">注册新用户</button>
+    <button bindtap="getWxInfo" class="wx">微信登录</button>
+  </view>
+</form>
+<view>登录状态：{{str_u_login}}</view>
+<view>登录id：{{str_u_id}}   | 用户名：{{str_u_name}}</view>
+<navigator url="/pages/huiyuan/index2">跳转到会员中心</navigator>

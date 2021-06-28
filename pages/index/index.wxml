@@ -1,0 +1,92 @@
+<swiper indicator-dots="{{true}}" vertical="{{false}}" autoplay="{{true}}" interval="1000" duration="500">
+  <block wx:for="{{imgUrl}}" wx:key="index">
+    <navigator url="{{item.navigator_url}}">
+      <swiper-item>
+        <image src="{{item.image_src}}" mode="widthFix" class="swiimg"></image>
+      </swiper-item>
+    </navigator>
+  </block>
+
+</swiper>
+<!-- 快捷菜单 -->
+<view class="menu">
+  <navigator url="." class="menu-item">
+    <image src="http://www.yaoyiwangluo.com/images/icon-link5.png" mode="widthFix" class="menu-img"></image>
+    <text class="xiaoxi_mc">品牌大全</text>
+  </navigator>
+  <navigator url="." class="menu-item">
+    <image src="http://www.yaoyiwangluo.com/images/icon-link6.png" mode="widthFix" class="menu-img"></image>
+    <text class="xiaoxi_mc">最新上架</text>
+  </navigator>
+  <navigator url="." class="menu-item">
+    <image src="http://www.yaoyiwangluo.com/images/icon-link7.png" mode="widthFix" class="menu-img"></image>
+    <text class="xiaoxi_mc">用户中心</text>
+  </navigator>
+  <navigator url="." class="menu-item">
+    <image src="http://www.yaoyiwangluo.com/images/icon-link8.png" mode="widthFix" class="menu-img"></image>
+    <text class="xiaoxi_mc">订单列表</text>
+  </navigator>
+  <navigator url="." class="menu-item">
+    <image src="http://www.yaoyiwangluo.com/images/icon-link4.png" mode="widthFix" class="menu-img"></image>
+    <text class="xiaoxi_mc">留言反馈</text>
+  </navigator>
+  <navigator url="." class="menu-item">
+    <image src="http://www.yaoyiwangluo.com/images/icon-link3.png" mode="widthFix" class="menu-img"></image>
+    <text class="xiaoxi_mc">会动列表</text>
+  </navigator>
+  <navigator url="." class="menu-item">
+    <image src="http://www.yaoyiwangluo.com/images/icon-link1.png" mode="widthFix" class="menu-img"></image>
+    <text class="xiaoxi_mc">帮助中心</text>
+  </navigator>
+  <navigator url="." class="menu-item">
+    <image src="http://www.yaoyiwangluo.com/images/icon-link2.png" mode="widthFix" class="menu-img"></image>
+    <text class="xiaoxi_mc">关于我们</text>
+  </navigator>
+</view>
+<block wx:for="{{xiaoxi_list}}" wx:key="index">
+  <navigator url="{{item.myid}}" class="xiaoxi">
+    <image src="/images/laba.png" mode="widthFix" class="xiaoxi_icon"></image>
+    <text class="xiaoxi_te">{{item.mybiaoti}}</text>
+    <image src="/images/youjiantou.png" mode="widthFix" class="xiaoxi_arr"></image>
+  </navigator>
+</block>
+<!--最新 区块 -->
+<view class="qukuai">
+  <view class="y01"></view>
+  <text class="t01">最新上架产品</text>
+  <view class="m01">更多></view>
+</view>
+<view class="zuixin">
+  <navigator url="/pages/chanpin/xiangxi?cpid={{item.cp_id}}&cpmc={{item.cp_mingcheng}}" class="zuixin-item" wx:for="{{zuixin_list}}" wx:key="index">
+    <image src="{{item.cp_tupian}}" mode="widthFix" class="zuixin-img"></image>
+    <text class="zuixin-mc">{{item.cp_mingcheng}}</text>
+    <view>
+      <text class="zuixin-jiage0">￥</text>
+      <text class="zuixin-jiage1">{{item.jiage}}</text>
+      <text class="zuixin-jiage2">{{index+100}}人付款</text>
+    </view>
+  </navigator>
+</view>
+<!-- 销售排行 -->
+<view class="qukuai">
+  <view class="y01"></view>
+  <text class="t01">销售排行</text>
+  <view class="m01">更多></view>
+</view>
+<block wx:for="{{zuixin_list}}" wx:key="index">
+  <navigator url="/pages/chanpin/xiangxi?cpid={{item.cp_id}}&cpmc={{item.cp_mingcheng}}" class="paihang-item">
+    <view class="paihang-tupian">
+      <image class="paihang-img" src='{{item.cp_tupian}}' mode="widthFix"></image>
+    </view>
+    <view class="paihang-xinxi">
+      <text class="paihang-mingcheng">{{item.cp_mingcheng}}</text>
+      <text class="paihang-jianjie">产品简介</text>
+      <view>
+        <text class="paihang-xuhao">No.{{index+1}}</text>
+        <text class="paihang-xiaoshou">|{{index+150}}人付款|</text>
+        <text class="paihang-jiage0">￥</text>
+        <text class="paihang-jiage1">{{item.jiage}}</text>
+      </view>
+    </view>
+  </navigator>
+</block>
